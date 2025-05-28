@@ -2,9 +2,8 @@
 import React from "react";
 import './../styles/App.css';
 
-const App = () => {
-  return (
-   const [count,setCount] = useState(0)
+cont App=()=>{
+  const[count,setcount]=usestate(0)
 
   const onAdd = ()=>{
     setCount(count+1)
