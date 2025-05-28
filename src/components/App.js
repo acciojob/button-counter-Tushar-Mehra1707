@@ -2,19 +2,17 @@
 import React from "react";
 import './../styles/App.css';
 
-cont App=()=>{
-  const[count,setcount]=usestate(0)
-
-  const onAdd = ()=>{
-    setCount(count+1)
-  }
-        {/* Do not remove the main div */}
-  
-  return (
-    <div >
-    <p>Button clicked {count} times</p>
-    <button onClick={onAdd}>Click me</button>
-    </div>
-  )
+const App=()=>{
+  const[num,setNum]=React.useState(0);
+  return(
+    <div>
+    <p>{num}</p>
+  <button onclick={()=>{
+    setNum{num+1}
+  }}>
+  increment
+  </button>
+  </div>
+)
 }
 export default App
